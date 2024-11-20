@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  background-color: #404E80;
+  background-image: url('./assets/hero.svg');
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: top;
+  backdrop-filter: blur(3px);
+  height: 100vh;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+@font-face {
+  font-family: 'EllenLuffReg';
+  src: url('./assets/EllenLuffReg.otf');
+}
+
+*{
+  font-family: 'EllenLuffReg';
+  font-weight: 400;
+}
+
+.wallet-adapter-button{
+  background-color: #FF6300;
+  border-radius: 2rem;
+  transition: all .3s ease-in-out;
+  height: 40px;
+}
+
+.wallet-adapter-button:hover{
+  background-color: #404E80 !important;
+}
+
+.wallet-adapter-modal-wrapper , .wallet-adapter-modal-wrapper .wallet-adapter-modal-list button{
+  background-color: #404E80;
+  border-radius: 3rem;
+}
+
+.wallet-adapter-modal-wrapper .wallet-adapter-modal-list button:hover{
+  background-color: #4d5e9a79;
+}
+
+
+
